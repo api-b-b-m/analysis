@@ -15,7 +15,7 @@ st.set_page_config(
 
 @st.cache_data
 def get_data_from_csv():
-    df=pd.read_csv('src/flipkart_scraping_output.csv',index_col=0)
+    df=pd.read_csv(r'src/flipkart_scraping_output.csv',index_col=0)
     return df
 
 ####################
@@ -107,7 +107,7 @@ percentage_sorted=brand_mean['DISCOUNT PERCENTAGE'].sort_values(ascending=False)
 
 left_column, right_column = st.columns(2)
 with left_column:
-    st.image('flipkart-icon.png')
+    st.image(r'flipkart-icon.png')
     st.title('Flipkart Data')
 
 ###################
