@@ -111,7 +111,7 @@ percentage_sorted=brand_mean['DISCOUNT PERCENTAGE'].sort_values(ascending=False)
 
 left_column, right_column = st.columns(2)
 with left_column:
-    st.image('./flipkart-icon.png')
+    st.image('./flipkart_analysis/flipkart-icon.png')
     st.title('Flipkart Data')
 
 ###################
