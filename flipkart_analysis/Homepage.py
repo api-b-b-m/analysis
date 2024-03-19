@@ -8,7 +8,7 @@ import plotly.graph_objects as go
 ####################
 
 st.set_page_config(
-    page_title='Flipkart Data',
+    page_title='https://github.com/api-b-b-m/analysis/blob/0041a911acc16234f1f9665c023ba4229fa370ad/flipkart_analysis/flipkart-icon.png',
     page_icon=r'flipkart-icon.png',
     layout='wide'
 )
@@ -16,10 +16,10 @@ st.set_page_config(
 @st.cache_data
 def get_data_from_csv():
     try:
-        df = pd.read_csv('src//flipkart_scraping_output.csv', index_col=0)
+        df = pd.read_csv('https://github.com/api-b-b-m/analysis/blob/0041a911acc16234f1f9665c023ba4229fa370ad/flipkart_analysis/src/flipkart_scraping_output.csv', index_col=0)
         return df
     except FileNotFoundError:
-        st.error("File 'src/flipkart_scraping_output.csv' not found. Please ensure the file exists.")
+        st.error("File 'src//flipkart_scraping_output.csv' not found. Please ensure the file exists.")
         return None
 
 ####################
@@ -109,7 +109,7 @@ percentage_sorted=brand_mean['DISCOUNT PERCENTAGE'].sort_values(ascending=False)
 ###TITLE###
 ###########
 
-st.image('flipkart-icon.png')
+st.image('https://github.com/api-b-b-m/analysis/blob/0041a911acc16234f1f9665c023ba4229fa370ad/flipkart_analysis/flipkart-icon.png')
 st.title('Flipkart Data')
 st.markdown('---')
 
