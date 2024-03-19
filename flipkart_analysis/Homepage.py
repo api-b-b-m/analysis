@@ -9,14 +9,14 @@ import plotly.graph_objects as go
 
 st.set_page_config(
     page_title='Flipkart Data',
-    page_icon='./flipkart-icon.png',
+    page_icon='./flipkart_analysis/flipkart-icon.png',
     layout='wide'
 )
 
 @st.cache_data
 def get_data_from_csv():
     try:
-        df = pd.read_csv('./src/flipkart_scraping_output.csv', index_col=0)
+        df = pd.read_csv('./flipkart_analysis/src/flipkart_scraping_output.csv', index_col=0)
         return df
     except FileNotFoundError:
         st.error("File 'src/flipkart_scraping_output.csv' not found. Please ensure the file exists.")
