@@ -8,7 +8,7 @@ import plotly.graph_objects as go
 ####################
 
 st.set_page_config(
-    page_title='Flipkart Data',
+    page_title='Flipkart Laptop Data',
     page_icon='./flipkart_analysis/flipkart-icon.png',
     layout='wide'
 )
