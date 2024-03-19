@@ -15,8 +15,12 @@ st.set_page_config(
 
 @st.cache_data
 def get_data_from_csv():
-    df=pd.read_csv(r'src/flipkart_scraping_output.csv',index_col=0)
-    return df
+    try:
+        df = pd.read_csv('src/flipkart_scraping_output.csv', index_col=0)
+        return df
+    except FileNotFoundError:
+        st.error("File 'src/flipkart_scraping_output.csv' not found. Please ensure the file exists.")
+        return None
 
 ####################
 ###FILTERING DATA###
