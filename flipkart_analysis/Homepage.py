@@ -113,7 +113,7 @@ st.image('./flipkart_analysis/flipkart-icon.png')
 st.title('Flipkart Laptop Data')
 st.markdown('---')
 
-st.dataframe(flip_df)
+st.dataframe(filtered_percentage)
 
 ######################
 ###STREAMLIT STYLES###
